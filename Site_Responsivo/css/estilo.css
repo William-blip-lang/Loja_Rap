@@ -47,6 +47,7 @@ section {
     min-height: 100vh;
     padding: 2rem;
     width: 100%;
+    scroll-margin-top: 200px;
 }
 
 
