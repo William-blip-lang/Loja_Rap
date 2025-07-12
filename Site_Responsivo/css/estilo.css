@@ -123,13 +123,15 @@ footer {
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
 .form-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* lado a lado por padrão */
     gap: 2rem;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .form-container .imagem {
@@ -174,17 +176,10 @@ form {
     border-radius: 8px;
 }
 
-
 @media (max-width: 768px) {
     .form-container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .form-container .imagem,
-    .form-container fieldset {
-        flex: 1;
+        flex-direction: column; /* empilhado em telas pequenas */
+        align-items: center;
     }
 
     .grid-fotos {
