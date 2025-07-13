@@ -163,7 +163,9 @@ form {
 
 .grid-fotos {
     display: grid;
-    width: 70%;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 1rem;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
