@@ -128,7 +128,7 @@ form {
 
 .form-container {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     gap: 2rem;
     align-items: flex-start;
     justify-content: center;
@@ -152,40 +152,68 @@ form {
 .painel-fotos {
     padding: 2rem;
     width: 100%;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.painel-fotos h2 {
-    margin-bottom: 2rem;
 }
 
 .grid-fotos {
     display: grid;
     width: 100%;
     max-width: 1000px;
-    padding: 0 1rem;
     gap: 1rem;
+    padding: 0 1rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .foto {
-    aspect-ratio: 1 / 1;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 8px;
 }
 
+.foto1 {
+    background-image: url('../imagens/J Cold && Dihhzzy.webp');
+    height: 250px;
+}
+
+.foto2 {
+    background-image: url('../imagens/Kendihh.webp');
+    height: 200px;
+}
+
+.foto3 {
+    background-image: url('../imagens/Travis-Scoot.webp');
+    height: 300px;
+}
+
+.foto4 {
+    background-image: url('../imagens/logic.webp');
+    height: 180px;
+}
+
+.foto5 {
+    background-image: url('../imagens/trav && carti.webp');
+    height: 220px;
+}
+
 @media (max-width: 768px) {
     .form-container {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
     }
 
     .grid-fotos {
-        width: 90%;
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .foto1,
+    .foto2,
+    .foto3,
+    .foto4,
+    .foto5 {
+        height: 160px;
     }
 }
